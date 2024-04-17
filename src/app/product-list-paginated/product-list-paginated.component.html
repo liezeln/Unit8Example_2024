@@ -1,0 +1,9 @@
+<p>You are on Page {{pageNum}}</p>
+
+<p><a [routerLink]="['/product-list-paginated']">No query param</a></p>
+<p><a [routerLink]="['/product-list-paginated']" 
+    [queryParams]="{ page: 99 }">Go to Page 99</a></p>
+
+<button (click)="nextPage()">Go to Next Page</button>
+<p><a [routerLink]="['/product-list']">Home</a></p>
+

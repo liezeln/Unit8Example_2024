@@ -1,0 +1,15 @@
+<div *ngIf="product">
+    <p>Product details:</p>
+    <p>
+      ID: {{ product.id }} <br />
+      Name: {{ product.name }} <br />
+      Price: {{ product.price | currency }} <br />
+      In stock: {{ product.isInStock ? "Yes" : "No" }}
+    </p>
+    
+    <p>Value retrieved from route parameter: {{ id }}</p>
+    
+    <a [routerLink]="['/product-list']"> Return to product list </a>
+
+</div>
+

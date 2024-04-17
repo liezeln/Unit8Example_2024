@@ -1,0 +1,9 @@
+<a
+  *ngFor="let product of products"
+  [routerLink]="['/product-details', product.id]"
+>
+  {{ product.name }} <br />
+</a>
+
+<p><a [routerLink]="['/product-list-paginated']"> Paginated list </a></p>
+
